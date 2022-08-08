@@ -17,14 +17,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <View
-            android:id="@+id/v_focus"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="#D81D1D" />
-    </androidx.recyclerview.widget.RecyclerView>
+        app:layout_constraintVertical_bias="0.0"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"

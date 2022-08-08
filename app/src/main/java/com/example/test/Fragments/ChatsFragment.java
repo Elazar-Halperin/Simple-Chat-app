@@ -4,7 +4,10 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.EditText;
 
 import androidx.annotation.NonNull;
@@ -54,6 +57,13 @@ public class ChatsFragment extends Fragment {
         super(R.layout.fragment_chats);
     }
 
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        getActivity().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+        return super.onCreateView(inflater, container, savedInstanceState);
+    }
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -65,7 +75,6 @@ public class ChatsFragment extends Fragment {
         firebaseUser = mAuth.getCurrentUser();
         database = FirebaseDatabase.getInstance();
         messageList = new ArrayList<>();
-        v_focus = view.findViewById(R.id.v_focus);
         fab_addMessage.setVisibility(View.GONE);
 
         // Get all the messages from the database
