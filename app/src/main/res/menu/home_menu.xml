@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/chatsFragment"
+        android:icon="@drawable/ic_round_chat_bubble_24"
+        android:title="Chats" />
+    <item android:id="@+id/usersFragment"
+        android:icon="@drawable/ic_baseline_person_search_24"
+        android:title="Users search"/>
+    <item android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_round_settings_24"
+        android:title="Settings"/>
+</menu>

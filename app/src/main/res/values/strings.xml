@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="sign_in">sign in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">sign up</string>
+    <string name="username">Full name</string>
+    <string name="sign_out">sign out</string>
+    <string name="focus_view_description">View inside the RecyclerView to be focused</string>
+
+</resources>
