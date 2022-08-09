@@ -47,15 +47,17 @@ public class MessagesRVAdapter extends RecyclerView.Adapter<MessagesRVAdapter.Me
         if(messageList.get(position).getSentByUserUid().equals(firebaseUser.getUid())) {
             params.gravity= Gravity.END;
             params.setMarginEnd(8);
-            params.setMarginStart(32);
+            params.setMarginStart(64);
             cv_messageBox.setCardBackgroundColor(context.getResources().getColor(R.color.sent_message_color));
         } else {
             params.gravity= Gravity.START;
-            params.setMarginEnd(32);
+            params.setMarginEnd(64);
             params.setMarginStart(8);
             cv_messageBox.setCardBackgroundColor(context.getResources().getColor(R.color.blue_background));
         }
         cv_messageBox.setLayoutParams(params);
+
+
 
         holder.getTv_message().setText(messageList.get(position).getText());
         holder.getTv_date().setText("17:34");
